@@ -27,6 +27,7 @@ app.use('/api/v1', require('./routes/Transactions.js' ))
 
 app.get("/",(req,res)=>{
     res.setHeader("Access-Control-Allow-Credentials","true")
+    res.send("api is running");
 })
 
 const server = () => {
