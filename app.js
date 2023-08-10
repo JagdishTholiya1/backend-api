@@ -4,7 +4,7 @@ const { db } = require('./db/db');
 const { addIncome, getIncomes, deleteIncome } = require('./controllers/income');
 const {readdirSync} = require('fs')
 const app = express()
-//const path = require('path')
+const path = require('path')
 require('dotenv').config()
 
 const PORT = process.env.PORT
